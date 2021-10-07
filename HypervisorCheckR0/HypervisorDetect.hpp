@@ -179,7 +179,7 @@ namespace DetectHyp
 	}
 
 	
-	 DWORD64 vary_lazy_hypervisor()
+	 DWORD64 very_lazy_hypervisor()
 	{
 		/*
 		if IA32_P5_MC_ADDR_MSR or SMI_COUNT_MSR just return 0,then this hypervisor very lazy
