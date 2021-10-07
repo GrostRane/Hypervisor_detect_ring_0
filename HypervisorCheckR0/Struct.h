@@ -229,26 +229,4 @@ typedef struct _SYSTEM_HYPERVISOR_QUERY_INFORMATION
   
 } SYSTEM_HYPERVISOR_QUERY_INFORMATION, * PSYSTEM_HYPERVISOR_QUERY_INFORMATION;
 
-typedef union _cr0_t
-{
-    struct
-    {
-        uint64_t protection_enable : 1;
-        uint64_t monitor_coprocessor : 1;
-        uint64_t emulation : 1;
-        uint64_t task_switched : 1;
-        uint64_t extension_type : 1;
-        uint64_t numeric_error : 1;
-        uint64_t reserved : 10;
-        uint64_t write_protect : 1;
-        uint64_t reserved_1 : 1;
-        uint64_t alignment_mask : 1;
-        uint64_t reserved_2 : 10;
-        uint64_t not_write_through : 1;
-        uint64_t cache_disable : 1;
-        uint64_t paging : 1;
-        uint64_t reserved_3 : 32;
-    };
-
-    uint64_t full;
-} cr0_t;
+ 
